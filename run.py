@@ -16,11 +16,11 @@ from PIL import Image
 app = Flask(__name__)
 model = load_model('printability_model.h5')
 
-# Define image dimensions and channels based on the Fashion MNIST dataset
+# Define image dimensions
 img_height = 28
 img_width = 28
 
-# Define the full path for the uploads folder
+#full path for the uploads folder
 uploads_dir = os.path.join(os.getcwd(), 'uploads')
 if not os.path.exists(uploads_dir):
     os.makedirs(uploads_dir)
